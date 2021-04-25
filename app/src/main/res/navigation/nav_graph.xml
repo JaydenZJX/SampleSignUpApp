@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profileCreationFragment">
+
+    <fragment
+        android:id="@+id/profileCreationFragment"
+        android:name="com.example.simplesignup.view.ProfileCreationFragment"
+        android:label="ProfileCreationFragment"
+        tools:layout="@layout/fragment_profile_creation">
+        <action
+            android:id="@+id/action_profileCreationFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.example.simplesignup.view.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation" />
+</navigation>
