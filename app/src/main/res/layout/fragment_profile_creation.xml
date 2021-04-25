@@ -129,9 +129,11 @@
                 android:text="@={viewmodel.website}" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- app:backgroundTint this is not right way to do it. it should be in a button `style` -->
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
+            app:backgroundTint="@color/red"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="@string/submit"
